@@ -27,9 +27,7 @@ export default class Bridge {
         return
       }
 
-      window.Alpine.discoverUninitializedComponents((el) => {
-        window.Alpine.initializeComponent(el)
-      })
+     
 
       requestAnimationFrame(() => { this.setMutationObserverState(true) })
     }
